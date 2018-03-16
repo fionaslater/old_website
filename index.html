@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet">
+  <title>Fiona Slater Website</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+</head>
+
+
+ <!-- first row of photos -->
+ 	<div class="row-top">
+
+		<img class="greyout" src="images/ball.jpg" alt="crystal ball">
+		<img class="greyout" src="images/lighthouse.jpg" alt="lighthouse">
+		<img class="greyout" src="images/boat.jpg" alt="boats">
+		<img class="greyout" src="images/city.jpg" alt="new york">
+		<img class="greyout" src="images/mountain2.jpg" alt="mountain2">
+
+	</div>
+
+<!-- second row of photos *** where greyout images and name is held -->
+
+	<div class="row-mid">
+
+    <h1 class="name-top">FIONA SLATER</h1>
+		<img class="greyout" src="images/cave.jpg" alt="cave">
+		<img class="name-background behind" src="images/city.jpg" alt="new york">
+		<img class="name-background behind" src="images/flower.jpg" alt="flower">
+		<img class="name-background behind" src="images/leaf.jpg" alt="leaf">
+		<img class="greyout" src="images/bike.jpg" alt="bike">
+
+	</div>
+
+<!-- third row of photos *** where the links are held -->
+
+	<div class="row-bottom">
+
+    <ul>
+      <li><a id="labs-link" class="text-top" href="portfolio/portfolio.html" style="padding-right:3px;">Portfolio</a></li>
+      <li><a id="projects-link" class="text-top" href="code/code.html" style="padding-right:10px;">Coding</a></a></li>
+      <li><a id="journals-link" class="text-top" href="resume.pdf" style="padding-right:7px;">Resume</a></li>
+    </ul>
+
+<!-- allows the link to be on the photo as well -->
+
+		<img class="greyout" src="images/bird.jpg" alt="black bird">
+		<a id="labs-img" href="portfolio/portfolio.html"><img class="greyout" src="images/mountain1.jpg" alt="mountain1"></a>
+		<a id="projects-img" href="code/code.html"><img class="greyout" src="images/bridge.jpg" alt="bridge"></a>
+		<a id="journals-img" href="resume.pdf"><img class="greyout" src="images/ocean.jpg" alt="ocean"></a>
+		<img class="greyout" src="images/tree.jpg" alt="tree">
+	</div>
+
+
+<!-- how the links and photo chagne with eachother and change eachother -->
+
+<script>
+
+// allows the photo to change the link color ... better way...?
+
+  $("#labs-img").hover(
+    function() { $("#labs-link").css("color","black"); },
+    function() { $("#labs-link").css("color",""); }
+  )
+
+  $("#projects-img").hover(
+    function() { $("#projects-link").css("color","black"); },
+    function() { $("#projects-link").css("color",""); }
+  )
+
+  $("#journals-img").hover(
+    function() { $("#journals-link").css("color","black"); },
+    function() { $("#journals-link").css("color",""); }
+  )
+
+// allows the link to change the photo opacity
+
+  $("#labs-link").hover(
+    function() { $("#labs-img").css("opacity",0.3); },
+    function() { $("#labs-img").css("opacity",1); }
+  )
+
+  $("#projects-link").hover(
+    function() { $("#projects-img").css("opacity",0.3); },
+    function() { $("#projects-img").css("opacity",1); }
+  )
+
+  $("#journals-link").hover(
+    function() { $("#journals-img").css("opacity",0.3); },
+    function() { $("#journals-img").css("opacity",1); }
+  )
+
+</script>
+</body>
+</html>

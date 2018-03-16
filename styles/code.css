@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+
+#window {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 20% 10% 1fr 15%;
+  grid-template-rows:  20% 1fr 1fr;
+
+  grid-template-areas:
+      "header n3 n2 img n1"
+      "links links n2 img n1"
+      "links links n2 img n1";
+}
+
+.img{
+  grid-area: img;
+  height: 100%;
+}
+
+.header {
+  grid-area: header;
+	font-size: 500%;
+  margin-bottom: 0;
+  padding-left: 20px
+}
+
+.links {
+  grid-area: links;
+}
+
+ul{
+	list-style-type: none;
+  line-height: 300%;
+  padding-left: 0;
+  text-align: right;
+}
+
+li a {
+  text-decoration: none;
+}
+li {
+  padding-left: 60px
+}
+
+h3, h2{
+	display: inline;
+  color: black;
+}
+
+h2:hover{
+  color: rgba(0,0,0,0.5);
+}

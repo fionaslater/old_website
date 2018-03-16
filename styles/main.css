@@ -1,0 +1,69 @@
+
+
+/*images------------------------------------*/
+
+body{
+	font-family: 'Arbutus Slab', serif;
+}
+
+
+/* grid format */
+
+div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+img{
+	width: 133.33px;
+	height: 200px;
+}
+
+.greyout:hover{
+	opacity: 0.3;
+}
+
+.name-background{
+	opacity: 0.2;
+}
+
+/*text--------------------------------------*/
+
+/* places name ontop of photos  */
+
+.name-top{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	font-size: 500%;
+	margin-top: 0;
+}
+
+ul {
+		display: flex;
+		position: absolute;
+    width: 60%;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-around;
+		list-style-type: none;
+		padding-left: 0px;
+		z-index: 1;
+}
+
+.text-top{
+	z-index: 1;
+	font-size: 190%;
+	color: white;
+}
+
+li a{
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}

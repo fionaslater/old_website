@@ -1,0 +1,53 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+
+#window {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 10% 1fr 10% 15% 1fr;
+  grid-template-rows:  20% 1fr 1fr;
+
+  grid-template-areas:
+      "n1 img n2 header n3"
+      "n1 img n2 links links"
+      "n1 img n2 links links";
+}
+
+.img{
+  grid-area: img;
+  height: 100%;
+}
+
+.header {
+  grid-area: header;
+	font-size: 500%;
+  margin-bottom: 0;
+}
+
+.links {
+  grid-area: links;
+}
+
+ul{
+	list-style-type: none;
+  line-height: 300%;
+}
+
+li a {
+  text-decoration: none;
+}
+
+h3, h2{
+	display: inline;
+  color: black;
+}
+
+h2:hover{
+  color: rgba(0,0,0,0.5);
+}
