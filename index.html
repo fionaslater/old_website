@@ -10,6 +10,8 @@
 
   <link rel="stylesheet" href="styles/main.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 
 
 </head>
@@ -62,6 +64,18 @@
 <!-- how the links and photo chagne with eachother and change eachother -->
 
 <script>
+
+  $(window).load(function(){
+    if ((navigator.userAgent.indexOf("Chrome") == -1 && navigator.userAgent.indexOf("Safari") != -1) || (navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )){
+      //swal("Uh oh!", "This site is still in development and some styling may not work in your browser. For best results, please view in Google Chrome  - F", "info");
+      swal({
+        title: "Uh oh!",
+        text: "This site is still in development and some styling may not work in your browser. For best results, please view in Google Chrome.",
+        icon: "info",
+        button: "Got it!",
+      });
+    }
+  });
 
 // allows the photo to change the link color ... better way...?
 
