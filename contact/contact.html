@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/contact.css" />
+    </head>
+    <body>
+        <section id="contact" class="contact-section">
+            <a href="/"><img class="monogram" src="../monogram.png" alt="fs" /></a>
+            <h3>Let's Start a Conversation</h3>
+            <form action="https://formspree.io/fiona.slater@colorado.edu" method="POST">
+
+                <span class="intro-span" id="intro-span">Hi! I'm Fiona. and you are?</span>
+                <div class="contact-info">
+
+                    <label>
+                        <input type="text" class="name-input" name="name" placeholder="Your name." required ></label>
+
+                    <label>
+                        <input type="email" name="_replyto" placeholder="Your email."required ></label>
+
+                </div>
+
+                <div class="secondary-prompt" id="secondary-prompt">
+
+                    <span>Nice to meet you! How can I help you?</span>
+
+                    <div class="message-div">
+                        <textarea class="message" name="message" required ></textarea>
+                    </div>
+
+                    <div class="submit-wrap">
+                        <input class="send-button" type="submit" value="Send">
+                    </div>
+
+                </div>
+
+            </form>
+
+
+        </section>
+    </body>
+</html>

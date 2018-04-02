@@ -7,6 +7,7 @@
   <title>Fiona Slater Website</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="styles/main.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -16,49 +17,74 @@
 
 </head>
 
+<body id="window">
+<img class="monogram" src="monogram.png" alt="fs" />
 
  <!-- first row of photos -->
+ <div class="name">
+     <h1 class="name-top">FIONA SLATER</h1>
+
+ </div>
+
  	<div class="row-top">
 
-		<img class="greyout" src="images/ball.jpg" alt="crystal ball">
-		<img class="greyout" src="images/lighthouse.jpg" alt="lighthouse">
-		<img class="greyout" src="images/boat.jpg" alt="boats">
-		<img class="greyout" src="images/city.jpg" alt="new york">
-		<img class="greyout" src="images/mountain2.jpg" alt="mountain2">
+    <div>
+      <a id="labs-img" href="portfolio/portfolio.html"><img class="greyout" src="images1/6.jpg" alt="flower"></a>
+      <a id="labs-link" class="text-top image-link" href="portfolio/portfolio.html" style="padding-right:3px;">Portfolio</a>
+    </div>
+
+
+
+    <div>
+      <a id="code-img" href="code/code.html"><img class="greyout" src="images1/11.jpg" alt="waterfall"></a>
+      <a id="code-link" class="text-top image-link" href="code/code.html"style="padding-right:3px;">Coding</a>
+    </div>
+
+
+    <div>
+      <a id="other-img" href="otherWork/otherWork.html"><img class="greyout" src="images1/5.jpg" alt="flower"></a>
+      <a id="other-link" class="text-top image-link" href="otherWork/otherWork.html" style="padding-right:3px;">Other Work</a>
+    </div>
+
+    <!-- <img class="greyout" src="images1/6.jpg" alt="crystal ball">
+    <img class="greyout" src="images1/11.jpg" alt="lighthouse">
+    <img class="greyout" src="images1/5.jpg" alt="boats"> -->
+
 
 	</div>
 
-<!-- second row of photos *** where greyout images and name is held -->
-
-	<div class="row-mid">
-
-    <h1 class="name-top">FIONA SLATER</h1>
-		<img class="greyout" src="images/cave.jpg" alt="cave">
-		<img class="name-background behind" src="images/city.jpg" alt="new york">
-		<img class="name-background behind" src="images/flower.jpg" alt="flower">
-		<img class="name-background behind" src="images/leaf.jpg" alt="leaf">
-		<img class="greyout" src="images/bike.jpg" alt="bike">
-
-	</div>
 
 <!-- third row of photos *** where the links are held -->
 
 	<div class="row-bottom">
 
-    <ul>
-      <li><a id="labs-link" class="text-top" href="portfolio/portfolio.html" style="padding-right:3px;">Portfolio</a></li>
-      <li><a id="projects-link" class="text-top" href="code/code.html" style="padding-right:10px;">Coding</a></a></li>
-      <li><a id="journals-link" class="text-top" href="resume.pdf" style="padding-right:7px;">Resume</a></li>
-    </ul>
+    <div class="link-image-container">
+      <a id="contact-img" href="contact/contact.html"><img class="greyout" src="images1/10.jpg" alt="ocean"></a>
+      <a id="contact-link" class="text-top image-link" href="contact/contact.html" style="padding-right:3px;">Contact</a>
+    </div>
 
-<!-- allows the link to be on the photo as well -->
+    <div class="link-image-container">
+        <a id="projects-img" href="aboutMe/about.html"><img class="greyout" src="images1/2.jpg" alt="mandala"></a>
+        <a id="projects-link" class="text-top image-link" href="aboutMe/about.html" style="padding-right:10px;">About Me</a>
+    </div>
 
-		<img class="greyout" src="images/bird.jpg" alt="black bird">
-		<a id="labs-img" href="portfolio/portfolio.html"><img class="greyout" src="images/mountain1.jpg" alt="mountain1"></a>
-		<a id="projects-img" href="code/code.html"><img class="greyout" src="images/bridge.jpg" alt="bridge"></a>
-		<a id="journals-img" href="resume.pdf"><img class="greyout" src="images/ocean.jpg" alt="ocean"></a>
-		<img class="greyout" src="images/tree.jpg" alt="tree">
+    <div class="link-image-container">
+      <a id="journals-img" href="resume.pdf"><img class="greyout" src="images1/12.jpg" alt="bird"></a>
+      <a id="journals-link" class="text-top image-link" href="resume.pdf" style="padding-right:7px;">Resume</a>
+    </div>
+
+
 	</div>
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- how the links and photo chagne with eachother and change eachother -->
@@ -94,6 +120,21 @@
     function() { $("#journals-link").css("color",""); }
   )
 
+  $("#code-img").hover(
+    function() { $("#code-link").css("color","black"); },
+    function() { $("#code-link").css("color",""); }
+  )
+
+  $("#other-img").hover(
+    function() { $("#other-link").css("color","black"); },
+    function() { $("#other-link").css("color",""); }
+  )
+
+  $("#contact-img").hover(
+    function() { $("#contact-link").css("color","black"); },
+    function() { $("#contact-link").css("color",""); }
+  )
+
 // allows the link to change the photo opacity
 
   $("#labs-link").hover(
@@ -109,6 +150,21 @@
   $("#journals-link").hover(
     function() { $("#journals-img").css("opacity",0.3); },
     function() { $("#journals-img").css("opacity",1); }
+  )
+
+  $("#code-link").hover(
+    function() { $("#code-img").css("opacity",0.3); },
+    function() { $("#code-img").css("opacity",1); }
+  )
+
+  $("#other-link").hover(
+    function() { $("#other-img").css("opacity",0.3); },
+    function() { $("#other-img").css("opacity",1); }
+  )
+
+  $("#contact-link").hover(
+    function() { $("#contact-img").css("opacity",0.3); },
+    function() { $("#contact-img").css("opacity",1); }
   )
 
 </script>

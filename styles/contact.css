@@ -1,0 +1,39 @@
+.contact-section {
+    margin: 0px auto 0px auto;
+    font-family: 'Arbutus Slab', serif;
+    text-align: center;
+    /*padding-top: 100px*/
+}
+
+img {
+  width: 150px;
+  /*position: absolute;*/
+}
+h3 {
+    font-size: 32px;
+}
+
+input {
+    width: 30%;
+    text-align: center;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.message-div {
+    margin-top: 10px;
+}
+.message {
+    width: 500px;
+    height: 100px;
+}
+
+.send-button:hover {
+
+    background-color: #E3E3E5;
+
+}
