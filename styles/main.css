@@ -58,6 +58,10 @@ div{
 	position: absolute;
 }
 
+.row-top{
+	margin-top: 0px;	
+}
+
 img{
 	max-width: 100%;
 
