@@ -33,15 +33,15 @@ div{
 
 .row-top{
   display: grid;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns:1fr;
   grid-auto-rows: minmax(100px,auto);
 	grid-gap: 3em;
 	justify-self: center;
 
 }
 
-.words{
 
+.words{
 	margin: 8em;
 	margin-top: 2em;
 }
@@ -124,9 +124,8 @@ img{
 
 
 	.words{
+		margin: 10em;
 		margin-top: 2em;
-		margin-left: 20em;
-		margin-right: 20em;
 	}
 
 

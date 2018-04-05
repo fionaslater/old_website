@@ -42,7 +42,7 @@ div{
 		grid-gap: 3em;
 		justify-self: center;
 
-	}
+}
 
 .image-link {
 	position: absolute;
@@ -59,7 +59,7 @@ div{
 }
 
 .row-top{
-	margin-top: 0px;	
+	margin-top: 0px;
 }
 
 img{
