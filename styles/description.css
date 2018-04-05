@@ -35,15 +35,17 @@ div{
   display: grid;
   grid-template-columns:1fr;
   grid-auto-rows: minmax(100px,auto);
-	grid-gap: 3em;
+	grid-gap: 1.5em;
 	justify-self: center;
 
 }
 
 
 .words{
-	margin: 8em;
-	margin-top: 2em;
+
+	margin-top: 1em;
+	margin-left: 13em;
+	margin-right: 13em;
 }
 
 /* a{
@@ -109,7 +111,7 @@ img{
 	.name{
 		grid-column: 1/2;
 		grid-row: 1;
-		font-size: 50%;
+		font-size: 75%;
 	}
 
 
@@ -117,17 +119,28 @@ img{
 		  display: grid;
 		  grid-template-columns:1fr;
 		  grid-auto-rows: minmax(100px,auto);
-			grid-gap: 3em;
+			grid-gap: 1.5em;
 			justify-self: center;
 
 		}
 
 
-	.words{
-		margin: 10em;
-		margin-top: 2em;
-	}
+		.words{
+			margin-top: 1em;
+			margin-left: 5em;
+			margin-right: 5em;
+		}
 
+}
+
+
+@media only screen and (max-width: 485px){
+
+	.words{
+		margin-top: 1em;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
 
 }
 
