@@ -3,14 +3,14 @@
 /*images------------------------------------*/
 
 body{
-	font-family: 'Arbutus Slab', serif;
+	/* font-family: 'Arbutus Slab', serif; */
+	font-family: 'Muli', sans-serif;
 	margin: 0px;
 }
 
 .logo-link {
-	z-index: 1;
-	grid-column: 1;
-	grid-row: 1;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* grid format */
@@ -65,18 +65,19 @@ div{
 } */
 
 .name{
+	font-family: 'Arbutus Slab', serif;
 	margin: 4em;
 }
 
 .monogram {
 	width: 150px;
-	position: absolute;
 }
 
 img{
 	max-width: 100%;
 
 }
+
 
 
 .greyout:hover{
@@ -103,21 +104,6 @@ img{
 
 }
 
-
-.monogram {
-	grid-column: 1/2;
-	grid-row: 2;
-	position: relative;
-	justify-self: center;
-
-}
-
-.logo-link {
-	grid-column: 1/2;
-	grid-row: 2;
-	position: relative;
-	justify-self: center;
-}
 
 .name{
 	grid-column: 1/2;

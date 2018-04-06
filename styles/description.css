@@ -3,14 +3,14 @@
 /*images------------------------------------*/
 
 body{
-	font-family: 'Arbutus Slab', serif;
+	/* font-family: 'Arbutus Slab', serif; */
+	font-family: 'Muli', sans-serif;
 	margin: 0px;
 }
 
 .logo-link {
-	z-index: 1;
-	grid-column: 1;
-	grid-row: 1;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* grid format */
@@ -42,24 +42,17 @@ div{
 
 
 .words{
-
 	margin-top: 1em;
-	margin-left: 13em;
-	margin-right: 13em;
+	margin-left: 15em;
+	margin-right: 15em;
+
+	/* padding: 3em;
+	background-color: #eee; */
 }
 
-/* a{
-	grid-column: 1;
-	grid-row: 1;
-} */
-
-.name{
-	margin: 4em;
-}
 
 .monogram {
 	width: 150px;
-	position: absolute;
 }
 
 img{
@@ -86,34 +79,9 @@ img{
     display: grid;
     grid-template-columns:1fr;
     grid-auto-rows: minmax(100px,auto);
-    /* grid-column-gap:1em;
-    grid-row-gap: 1em; */
     grid-column-gap:1em;
 
 }
-
-
-	.monogram {
-		grid-column: 1/2;
-		grid-row: 2;
-		position: relative;
-		justify-self: center;
-
-	}
-
-	.logo-link {
-		grid-column: 1/2;
-		grid-row: 2;
-		position: relative;
-		justify-self: center;
-	}
-
-	.name{
-		grid-column: 1/2;
-		grid-row: 1;
-		font-size: 75%;
-	}
-
 
 	.row-top {
 		  display: grid;
@@ -123,7 +91,6 @@ img{
 			justify-self: center;
 
 		}
-
 
 		.words{
 			margin-top: 1em;
@@ -149,10 +116,10 @@ img{
 
 /* places name ontop of photos  */
 
-.name-top{
+/* .name-top{
 	position: absolute;
 	text-align: center;
 	width: 100%;
 	font-size: 350%;
 	margin-top: 0;
-}
+} */

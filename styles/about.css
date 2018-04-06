@@ -1,6 +1,7 @@
 .contact-section {
     margin: 0px auto 0px auto;
-    font-family: 'Arbutus Slab', serif;
+    /* font-family: 'Arbutus Slab', serif; */
+    font-family: 'Muli', sans-serif;
     text-align: center;
     /*padding-top: 100px*/
 }

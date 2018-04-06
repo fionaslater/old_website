@@ -4,6 +4,7 @@
 
 body{
 	font-family: 'Arbutus Slab', serif;
+	/* font-family: 'Muli', sans-serif; */
 	margin: 0px;
 }
 
@@ -50,6 +51,7 @@ div{
 }
 
 .name{
+	font-family: 'Arbutus Slab', serif;
 	margin: 4em;
 }
 

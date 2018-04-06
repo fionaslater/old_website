@@ -3,14 +3,14 @@
 /*images------------------------------------*/
 
 body{
-	font-family: 'Arbutus Slab', serif;
+	/* font-family: 'Arbutus Slab', serif; */
+	font-family: 'Muli', sans-serif;
 	margin: 0px;
 }
 
 .logo-link {
-	z-index: 1;
-	grid-column: 1;
-	grid-row: 1;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* grid format */
@@ -65,13 +65,8 @@ div{
 	grid-row: 1;
 } */
 
-.name{
-	margin: 4em;
-}
-
 .monogram {
 	width: 150px;
-	position: absolute;
 }
 
 img{
@@ -104,28 +99,6 @@ img{
     /* grid-column-gap:1em;
     grid-row-gap: 1em; */
     grid-column-gap:1em;
-}
-
-
-.monogram {
-	grid-column: 1/2;
-	grid-row: 2;
-	position: relative;
-	justify-self: center;
-
-}
-
-.logo-link {
-	grid-column: 1/2;
-	grid-row: 2;
-	position: relative;
-	justify-self: center;
-}
-
-.name{
-	grid-column: 1/2;
-	grid-row: 1;
-	font-size: 75%;
 }
 
 .bottom-img{
