@@ -41,13 +41,19 @@ div{
 }
 
 
-.words{
+#words{
+	display: grid;
+	grid-template-columns:1fr 1fr 40%;
 	margin-top: 1em;
-	margin-left: 15em;
-	margin-right: 15em;
+	margin-left: 8em;
+	margin-right: 8em;
+	font-size: 85%;
+	/* background-color: #303030; */
+}
 
-	/* padding: 3em;
-	background-color: #eee; */
+.info{
+	grid-column: 3;
+	grid-row: 1;
 }
 
 
@@ -92,22 +98,59 @@ img{
 
 		}
 
-		.words{
+		#words{
+			display: grid;
+			grid-template-columns:1fr 50% 1fr;
 			margin-top: 1em;
-			margin-left: 5em;
-			margin-right: 5em;
+			/* margin-left: 3em;
+			margin-right: 3em; */
+			font-size: 85%;
+			/* background-color: #303030; */
 		}
 
+		.info{
+			grid-column: 2;
+			grid-row: 1;
+		}
 }
 
 
-@media only screen and (max-width: 485px){
+@media only screen and (max-width: 850px){
 
-	.words{
+	#words{
+		display: grid;
+		grid-template-columns:1fr 60% 1fr;
 		margin-top: 1em;
-		margin-left: 2em;
-		margin-right: 2em;
+		margin-left: 3em;
+		margin-right: 3em;
+		font-size: 85%;
+		/* background-color: #303030; */
 	}
+
+	.info{
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+}
+
+@media only screen and (max-width: 570px){
+
+	#words{
+		display: grid;
+		grid-template-columns:1fr 80% 1fr;
+		margin-top: 1em;
+		/* margin-left: 1em;
+		margin-right: 1em; */
+		font-size: 85%;
+		/* background-color: #303030; */
+	}
+
+	.info{
+		grid-column: 2;
+		grid-row: 1;
+	}
+
 
 }
 
