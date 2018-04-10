@@ -6,6 +6,10 @@
     /*padding-top: 100px*/
 }
 
+.monogram:hover{
+	opacity: .5;
+}
+
 img {
   width: 150px;
   /*position: absolute;*/

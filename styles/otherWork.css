@@ -66,13 +66,17 @@ div{
 } */
 
 .name{
-	font-family: 'Arbutus Slab', serif; 
+	font-family: 'Arbutus Slab', serif;
 	margin: 4em;
 }
 
 .monogram {
 	width: 150px;
 	position: absolute;
+}
+
+.monogram:hover{
+	opacity: .5;
 }
 
 img{

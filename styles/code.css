@@ -13,6 +13,10 @@ body{
 	margin-right: auto;
 }
 
+
+/* .logo-link:hover{
+	opacity: .3%;
+} */
 /* grid format */
 
 div{
@@ -71,6 +75,10 @@ div{
 
 .monogram {
 	width: 150px;
+}
+
+.monogram:hover{
+	opacity: .5;
 }
 
 img{

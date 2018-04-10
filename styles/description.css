@@ -61,6 +61,10 @@ div{
 	width: 150px;
 }
 
+.monogram:hover{
+	opacity: .5;
+}
+
 img{
 	max-width: 100%;
 

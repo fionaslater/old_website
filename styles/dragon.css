@@ -3,10 +3,9 @@
 /*images------------------------------------*/
 
 body{
-	font-family: 'Muli', sans-serif;
 	/* font-family: 'Arbutus Slab', serif; */
+	font-family: 'Muli', sans-serif;
 	margin: 0px;
-	/* background-color: #303030 */
 }
 
 .logo-link {
@@ -34,35 +33,34 @@ div{
 
 .row-top{
   display: grid;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr;
   grid-auto-rows: minmax(100px,auto);
 	grid-gap: 1.5em;
 	justify-self: center;
 
 }
 
+
 #words{
 	display: grid;
-	grid-template-columns:1fr 1fr 40%;
-	margin-top: 1em;
-	margin-left: 8em;
-	margin-right: 8em;
+	grid-template-columns:10% 55% 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	margin-top: 3em;
+	/* margin-left: 8em;
+	margin-right: 8em; */
 	font-size: 85%;
-	/* background-color: #303030; */
 }
 
 .info{
-	grid-column: 3;
-	grid-row: 1;
-}
-
-.disclaimer{
-	grid-column: 3;
+	margin-top: 4em;
+	grid-column: 2;
 	grid-row: 2;
-
 }
 
-
+.dragon{
+	justify-self: flex-end;
+	margin-top: .5em;
+}
 
 .monogram {
 	width: 150px;
@@ -77,6 +75,7 @@ img{
 
 }
 
+
 .greyout:hover{
 	opacity: 0.3;
 }
@@ -85,9 +84,6 @@ img{
 	opacity: 0.2;
 }
 
-h3{
-	font-size: 75%;
-}
 
 
 
@@ -98,37 +94,39 @@ h3{
     display: grid;
     grid-template-columns:1fr;
     grid-auto-rows: minmax(100px,auto);
-    /* grid-column-gap:1em;
-    grid-row-gap: 1em; */
     grid-column-gap:1em;
 
 }
 
-.row-top {
-	  display: grid;
-	  grid-template-columns:1fr;
-	  grid-auto-rows: minmax(100px,auto);
-		grid-gap: 1.5em;
-		justify-self: center;
+	.row-top {
+		  display: grid;
+		  grid-template-columns:1fr;
+		  grid-auto-rows: minmax(100px,auto);
+			grid-gap: 1.5em;
+			justify-self: center;
 
-	}
+		}
 
-	#words{
-		display: grid;
-		grid-template-columns:1fr 50% 1fr;
-		margin-top: 1em;
-		/* margin-left: 3em;
-		margin-right: 3em; */
-		font-size: 85%;
-		/* background-color: #303030; */
-	}
+		#words{
+			display: grid;
+			grid-template-columns:1fr 50% 1fr;
+			margin-top: 1em;
+			/* margin-left: 3em;
+			margin-right: 3em; */
+			font-size: 85%;
+			/* background-color: #303030; */
+		}
 
-	.info{
-		grid-column: 2;
-		grid-row: 1;
-	}
+		.info{
+			margin-top: 1em;
+			grid-column: 2;
+			grid-row: 1;
+		}
 
-
+		.dragon{
+			margin-top: 1em;
+			justify-self: center;
+		}
 }
 
 
@@ -171,6 +169,15 @@ h3{
 
 }
 
+
 /*text--------------------------------------*/
 
 /* places name ontop of photos  */
+
+/* .name-top{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	font-size: 350%;
+	margin-top: 0;
+} */
